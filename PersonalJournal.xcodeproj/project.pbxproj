@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000010000000000000001 /* PersonalJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* PersonalJournalApp.swift */; };
+		A10000010000000000000002 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000002 /* AppContainer.swift */; };
+		A10000010000000000000003 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000003 /* RootTabView.swift */; };
+		A10000010000000000000004 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000004 /* JournalView.swift */; };
+		A10000010000000000000005 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000005 /* ArchiveView.swift */; };
+		A10000010000000000000006 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000006 /* SettingsView.swift */; };
+		A10000010000000000000007 /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000007 /* AIService.swift */; };
+		A10000010000000000000008 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000008 /* PersistenceService.swift */; };
+		A10000010000000000000009 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000009 /* AppTheme.swift */; };
+		A1000001000000000000000A /* PersonalJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000A /* PersonalJournalTests.swift */; };
+		A1000001000000000000000B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000C /* XCTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A30000010000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A40000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50000010000000000000002;
+			remoteInfo = PersonalJournal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20000010000000000000001 /* PersonalJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalJournalApp.swift; sourceTree = "<group>"; };
+		A20000010000000000000002 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		A20000010000000000000003 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		A20000010000000000000004 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		A20000010000000000000005 /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
+		A20000010000000000000006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20000010000000000000007 /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		A20000010000000000000008 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		A20000010000000000000009 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		A2000001000000000000000A /* PersonalJournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalJournalTests.swift; sourceTree = "<group>"; };
+		A2000001000000000000000B /* App/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = App/Info.plist; sourceTree = SOURCE_ROOT; };
+		A2000001000000000000000C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A2000001000000000000000D /* PersonalJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000001000000000000000E /* PersonalJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000001000000000000000F /* PersonalJournalTests/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PersonalJournalTests/Info.plist; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60000010000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000000000000000B /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A70000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A70000010000000000000002 /* App */,
+				A70000010000000000000003 /* Features */,
+				A70000010000000000000004 /* Services */,
+				A70000010000000000000005 /* DesignSystem */,
+				A70000010000000000000006 /* PersonalJournalTests */,
+				A70000010000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A70000010000000000000002 /* App */ = {
+			isa = PBXGroup;
+			path = App;
+			sourceTree = "<group>";
+			children = (
+				A20000010000000000000001 /* PersonalJournalApp.swift */,
+				A20000010000000000000002 /* AppContainer.swift */,
+				A20000010000000000000003 /* RootTabView.swift */,
+				A2000001000000000000000B /* App/Info.plist */,
+			);
+		};
+		A70000010000000000000003 /* Features */ = {
+			isa = PBXGroup;
+			path = Features;
+			sourceTree = "<group>";
+			children = (
+				A70000010000000000000008 /* Journal */,
+				A70000010000000000000009 /* Archive */,
+				A7000001000000000000000A /* Settings */,
+			);
+		};
+		A70000010000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			path = Services;
+			sourceTree = "<group>";
+			children = (
+				A7000001000000000000000B /* AI */,
+				A7000001000000000000000C /* Persistence */,
+			);
+		};
+		A70000010000000000000005 /* DesignSystem */ = {
+			isa = PBXGroup;
+			path = DesignSystem;
+			sourceTree = "<group>";
+			children = (
+				A20000010000000000000009 /* AppTheme.swift */,
+			);
+		};
+		A70000010000000000000006 /* PersonalJournalTests */ = {
+			isa = PBXGroup;
+			path = PersonalJournalTests;
+			sourceTree = "<group>";
+			children = (
+				A2000001000000000000000A /* PersonalJournalTests.swift */,
+				A2000001000000000000000F /* PersonalJournalTests/Info.plist */,
+			);
+		};
+		A70000010000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000000000000000D /* PersonalJournal.app */,
+				A2000001000000000000000E /* PersonalJournalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A70000010000000000000008 /* Journal */ = {
+			isa = PBXGroup;
+			path = Journal;
+			sourceTree = "<group>";
+			children = (
+				A20000010000000000000004 /* JournalView.swift */,
+			);
+		};
+		A70000010000000000000009 /* Archive */ = {
+			isa = PBXGroup;
+			path = Archive;
+			sourceTree = "<group>";
+			children = (
+				A20000010000000000000005 /* ArchiveView.swift */,
+			);
+		};
+		A7000001000000000000000A /* Settings */ = {
+			isa = PBXGroup;
+			path = Settings;
+			sourceTree = "<group>";
+			children = (
+				A20000010000000000000006 /* SettingsView.swift */,
+			);
+		};
+		A7000001000000000000000B /* AI */ = {
+			isa = PBXGroup;
+			path = AI;
+			sourceTree = "<group>";
+			children = (
+				A20000010000000000000007 /* AIService.swift */,
+			);
+		};
+		A7000001000000000000000C /* Persistence */ = {
+			isa = PBXGroup;
+			path = Persistence;
+			sourceTree = "<group>";
+			children = (
+				A20000010000000000000008 /* PersistenceService.swift */,
+			);
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000010000000000000002 /* PersonalJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000010000000000000001 /* Build configuration list for PBXNativeTarget "PersonalJournal" */;
+			buildPhases = (
+				A90000010000000000000001 /* Sources */,
+				A60000010000000000000001 /* Frameworks */,
+				AA0000010000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersonalJournal;
+			productName = PersonalJournal;
+			productReference = A2000001000000000000000D /* PersonalJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50000010000000000000003 /* PersonalJournalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000010000000000000002 /* Build configuration list for PBXNativeTarget "PersonalJournalTests" */;
+			buildPhases = (
+				A90000010000000000000002 /* Sources */,
+				A60000010000000000000002 /* Frameworks */,
+				AA0000010000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB0000010000000000000001 /* PBXTargetDependency */,
+			);
+			name = PersonalJournalTests;
+			productName = PersonalJournalTests;
+			productReference = A2000001000000000000000E /* PersonalJournalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A40000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A50000010000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A50000010000000000000003 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A50000010000000000000002;
+					};
+				};
+			};
+			buildConfigurationList = A80000010000000000000003 /* Build configuration list for PBXProject "PersonalJournal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A70000010000000000000001;
+			productRefGroup = A70000010000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000010000000000000002 /* PersonalJournal */,
+				A50000010000000000000003 /* PersonalJournalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0000010000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000010000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* PersonalJournalApp.swift in Sources */,
+				A10000010000000000000002 /* AppContainer.swift in Sources */,
+				A10000010000000000000003 /* RootTabView.swift in Sources */,
+				A10000010000000000000004 /* JournalView.swift in Sources */,
+				A10000010000000000000005 /* ArchiveView.swift in Sources */,
+				A10000010000000000000006 /* SettingsView.swift in Sources */,
+				A10000010000000000000007 /* AIService.swift in Sources */,
+				A10000010000000000000008 /* PersistenceService.swift in Sources */,
+				A10000010000000000000009 /* AppTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90000010000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000000000000000A /* PersonalJournalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB0000010000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50000010000000000000002 /* PersonalJournal */;
+			targetProxy = A30000010000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC0000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PersonalJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AC0000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PersonalJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AC0000010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PersonalJournalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PersonalJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonalJournal.app/PersonalJournal";
+			};
+			name = Debug;
+		};
+		AC0000010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PersonalJournalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PersonalJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonalJournal.app/PersonalJournal";
+			};
+			name = Release;
+		};
+		AC0000010000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC0000010000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80000010000000000000001 /* Build configuration list for PBXNativeTarget "PersonalJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0000010000000000000001 /* Debug */,
+				AC0000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000010000000000000002 /* Build configuration list for PBXNativeTarget "PersonalJournalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0000010000000000000003 /* Debug */,
+				AC0000010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000010000000000000003 /* Build configuration list for PBXProject "PersonalJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0000010000000000000005 /* Debug */,
+				AC0000010000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A40000010000000000000001 /* Project object */;
+}
