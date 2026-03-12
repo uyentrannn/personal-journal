@@ -9,8 +9,31 @@ final class PersonalJournalTests: XCTestCase {
         XCTAssertTrue(summary.hasPrefix("Summary placeholder:"))
     }
 
-    func testPersistenceStatusDescription() {
+    func testFallbackAffirmationsForMoodReturnsThreeLines() {
+        let service = AIService(provider: nil)
+
+        let suggestions = service.suggestAffirmations(for: .lowEnergy, context: nil)
+
+        XCTAssertEqual(suggestions.count, 3)
+        XCTAssertTrue(suggestions.allSatisfy { !$0.isEmpty })
+    }
+
+    func testPersistenceUpdatesSelectedAffirmations() {
         let persistence = PersistenceService()
-        XCTAssertEqual(persistence.statusDescription, "Persistence service configured (stub).")
+        let affirmations = [
+            "I welcome this day.",
+            "I trust my pace.",
+            "I can begin again."
+        ]
+
+        persistence.updateDailyEntry(
+            text: "Feeling okay.",
+            mood: .hopefulCurious,
+            affirmations: affirmations
+        )
+
+        XCTAssertEqual(persistence.dailyEntry.mood, .hopefulCurious)
+        XCTAssertEqual(persistence.dailyEntry.affirmations, affirmations)
+        XCTAssertEqual(persistence.dailyEntry.entryText, "Feeling okay.")
     }
 }
