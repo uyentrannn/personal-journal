@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Journal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="launchView" class="launch-view" aria-label="Journal cover">
+        <div class="cover-card">
+          <h1>Daily Ritual Journal</h1>
+          <p>Pause. Breathe. Open to today.</p>
+          <button id="beginButton" class="primary-btn">Open Journal</button>
+          <label class="toggle-row" for="rustleToggle">
+            <input type="checkbox" id="rustleToggle" checked />
+            Play paper rustle sound
+          </label>
+        </div>
+      </section>
+
+      <section id="entryView" class="entry-view" aria-label="Daily entry page">
+        <div class="page-shell">
+          <header class="entry-header block">
+            <label class="field-label" for="entryDate">Date</label>
+            <div class="date-row">
+              <input id="entryDate" type="date" aria-label="Entry date" />
+              <span id="dayOfYear" class="day-pill">Day 1</span>
+            </div>
+            <p id="prettyDate" class="pretty-date"></p>
+          </header>
+
+          <section class="block" aria-labelledby="affirmationsHeading">
+            <h2 id="affirmationsHeading">Affirmations</h2>
+            <textarea id="affirmation1" rows="1" placeholder="I am..." maxlength="140"></textarea>
+            <textarea id="affirmation2" rows="1" placeholder="I choose..." maxlength="140"></textarea>
+            <textarea id="affirmation3" rows="1" placeholder="Today I embody..." maxlength="140"></textarea>
+          </section>
+
+          <section class="block" aria-labelledby="mantraHeading">
+            <h2 id="mantraHeading">Day Mantra</h2>
+            <textarea id="mantra" rows="2" placeholder="My mantra for today..." maxlength="200"></textarea>
+          </section>
+
+          <section class="block" aria-labelledby="gratitudeHeading">
+            <h2 id="gratitudeHeading">Gratitude</h2>
+            <textarea id="gratitude1" rows="1" placeholder="I am grateful for..." maxlength="140"></textarea>
+            <textarea id="gratitude2" rows="1" placeholder="I appreciate..." maxlength="140"></textarea>
+            <textarea id="gratitude3" rows="1" placeholder="Thank you for..." maxlength="140"></textarea>
+          </section>
+
+          <footer class="save-status" id="saveStatus" aria-live="polite"></footer>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
